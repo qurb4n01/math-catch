@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lobby.css">
+    <title>Game Start</title>
+</head>
+<body>
+    <div id="startPage" class="container">
+        <h1>Are You Ready?</h1>
+        <div id="equation"></div>
+        <input type="text" id="answerInput" placeholder="Your answer">
+        <button id="startButton" disabled>Yes</button>
+
+        <div id="gameManual">
+            <h2>Game Manual</h2>
+            <ul>
+                <li><strong>Objective:</strong> The goal of the game is to catch falling number blocks in your bucket. Players aim to collect numbers that sum up to a target number to score points.</li>
+                <li><strong>Gameplay:</strong> Two players control two separate buckets (one using 'A' and 'D' for left and right, and the other using the arrow keys). They must catch falling numbers and add them to their bucket.</li>
+                <li><strong>Scoring:</strong> After catching 2 number blocks, if the sum of the numbers in the bucket meets or exceeds the target number, the player earns 1 point. If the sum is less, they lose 1 point.</li>
+                <li><strong>Red Blocks:</strong> Occasionally, red blocks will fall. If a player catches a red block, they lose 1 point. These red blocks appear in waves at regular intervals.</li>
+                <li><strong>Target Number:</strong> After scoring, the target number will change randomly between 30, 50, and 65.</li>
+                <li><strong>Timer:</strong> Players have 90 seconds to collect as many points as possible. The game ends when the timer runs out.</li>
+                <li><strong>Game Over:</strong> The game ends when the timer reaches zero, and the player with the highest score wins!</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="lobby.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Catch - Two Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="backgroundMusic" src="657663__josefpres__8-bit-game-loop-011-only-organ-long-120-bpm.wav" loop="true" preload="auto"></audio>
+    <audio id="catchSound" src="350872__cabled_mess__coin_c_01.wav" preload="auto"></audio>
+    <audio id="redBlockHitSound" src="351000__cabled_mess__zap_c_03.wav" preload="auto"></audio>
+
+    <div id="cooldownDisplay">Cooldown: 20s</div>
+    <div id="timerDisplay">Time: 3:00</div>
+
+    <div id="gameContainer1" class="gameContainer">
+        <div id="targetNumber1">Target: 50</div>
+        <div id="score1">Score: 0</div>
+        <div id="bucketValue1">Bucket: 0</div>
+        <div id="bucket1" class="bucket"></div>
+    </div>
+    <div id="gameContainer2" class="gameContainer">
+        <div id="targetNumber2">Target: 50</div>
+        <div id="score2">Score: 0</div>
+        <div id="bucketValue2">Bucket: 0</div>
+        <div id="bucket2" class="bucket"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
