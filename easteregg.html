@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easter Egg Page</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #ffb6c1, #f0e68c, #d3c0e0, #b0e0e6);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .egg {
+            width: 180px;
+            height: 180px;
+            background-image: url('easter-egg.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            animation: eggBounce 2s infinite;
+        }
+
+        @keyframes eggBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="egg"></div>
+    <h1>Hajibey's Big Brother Found! 🐣</h1>
+</body>
+</html>
